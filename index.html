@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="global.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-tac-toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Хрестики-нулики</h1>
+      <div class="game-board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="game-info">
+        <h2 class="status-message"></h2>
+        <button id="restartButton">Спочатку</button>
+      </div>
+      <div class="ai-controls">
+        <label> <input type="checkbox" id="aiToggle" /> Увімкнути ІІ </label>
+        <div class="ai-levels">
+          <label for="aiDifficulty">Рівень ІІ:</label>
+          <select id="aiDifficulty" disabled>
+            <option value="easy">Легкий</option>
+            <option value="medium">Середній</option>
+            <option value="hard">Складний</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/services/tic-tac-toe.js"></script>
+  </body>
+</html>
